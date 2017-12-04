@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dropdown</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+<header>
+<nav>
+	<ul class="nav-wrapper">
+		<li class="nav-item"><a href="#">1</a></li>
+		<li class="nav-item"><a href="#">2</a></li>
+		<li class="nav-item">
+			<a href="#">3</a>
+			<ul class="nav-item-submenu bottom">
+				<li class="nav-item"><a href="#">3.1</a></li>
+				<li class="nav-item">
+					<a href="#">3.2</a>
+					<ul class="nav-item-submenu right">
+						<li class="nav-item"><a href="#">3.2.1</a></li>
+						<li class="nav-item">
+							<a href="#">3.2.2</a>
+							<ul class="nav-item-submenu right">
+								<li class="nav-item"><a href="#">3.2.2.1</a></li>
+								<li class="nav-item"><a href="#">3.2.2.2</a></li>
+								<li class="nav-item"><a href="#">3.2.2.3</a></li>
+								<li class="nav-item">
+									<a href="#">3.2.2.4</a>
+									<ul class="nav-item-submenu right">
+										<li class="nav-item"><a href="#">3.2.2.4.1</a></li>
+										<li class="nav-item"><a href="#">3.2.2.4.2</a></li>
+										<li class="nav-item"><a href="#">3.2.2.4.3</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item"><a href="#">3.2.3</a></li>
+						<li class="nav-item"><a href="#">3.2.4</a></li>
+					</ul>
+				</li>
+				<li class="nav-item"><a href="#">3.3</a></li>
+			</ul>
+		</li>
+		<li class="nav-item"><a href="#">4</a></li>
+		<li class="nav-item"><a href="#">5</a></li>
+	</ul>
+</nav>
+</header>
+<main>
+	<div class="slider">
+	<div class="slider-wrapper">
+		<img class="slider-item" src="img/1.png">
+		<img class="slider-item" src="img/2.png">
+		<img class="slider-item" src="img/3.png">
+		<img class="slider-item" src="img/4.png">
+		<img class="slider-item" src="img/5.png">
+	</div>
+		<button class="next" onclick="next()"></button>
+		<button class="previous" onclick="previous()"></button>
+		<div class="indicators">
+			<span onclick="indicate(0)" class="active-indicator"></span>
+			<span onclick="indicate(1)" class="indicator"></span>
+			<span onclick="indicate(2)" class="indicator"></span>
+			<span onclick="indicate(3)" class="indicator"></span>
+			<span onclick="indicate(4)" class="indicator"></span>
+		</div>
+	</div>
+</main>
+<script src="javascript/slider.js"></script>
+</body>
+</html>

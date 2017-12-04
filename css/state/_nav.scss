@@ -1,0 +1,13 @@
+.nav-item:hover{
+	&>.nav-item-submenu{
+		display:block;
+	}
+}
+
+.nav-item-submenu> .nav-item:hover{
+	background-color:#900;
+	&>a{
+		color:red;
+	}
+}
+
