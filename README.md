@@ -1,0 +1,1 @@
+updated dropdown and slider
